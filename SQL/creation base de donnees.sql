@@ -47,3 +47,9 @@ CREATE TABLE favoris (
     FOREIGN KEY (utilisateur_id) REFERENCES utilisateurs(id)
 );
 
+CREATE TABLE actualites (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titre VARCHAR(255) NOT NULL,
+    contenu TEXT NOT NULL,
+    date_publication DATE NOT NULL
+);
